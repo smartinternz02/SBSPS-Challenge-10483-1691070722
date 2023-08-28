@@ -16,9 +16,21 @@ def index(request):
 @login_required(login_url='stdlogin')
 def student(request):
     return render(request, 'student.html')
+def academic(request):
+    return render(request, 'academic.html')
+def skills(request):
+    return render(request, 'skills.html')
+def branch(request):
+    return render(request, 'branch.html')
+def company(request):
+    return render(request, 'company.html')
 @login_required(login_url='reclogin')
 def recruiter(request):
     return render(request, 'recruiter.html')
+def racademic(request):
+    return render(request, 'RAcademic.html')
+def rskills(request):
+    return render(request, 'RSkills.html')
 @login_required(login_url='stdlogin')
 def about(request):
    return render(request, 'about.html')
